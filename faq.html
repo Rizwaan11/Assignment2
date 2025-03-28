@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <menu>
+            <button id="menuToggle" class="menu-toggle">☰</button>
+            <ul id="menuList" class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="faq.html">FAQS</a></li>
+            </ul>
+        </menu>
+        
+    </header>
+
+
+    <section id="faqSection">
+        <div class="container">
+            <h1 id="faqTitle">Frequently Asked Questions</h1>
+            
+            <div class="faqItem" id="faq1">
+                <div class="faqQuestion" onclick="toggleAnswer('faq1Answer')">
+                    <h2 class="questionText">What is a To-Do App?</h2>
+                    <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="faqAnswer" id="faq1Answer">
+                    <p class="answerText">
+                        A To-Do App is a tool that helps you organize and manage tasks and to-do lists in a digital format. It helps users to stay organized and be more productive.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="faqItem" id="faq2">
+                <div class="faqQuestion" onclick="toggleAnswer('faq2Answer')">
+                    <h2 class="questionText">How do I add tasks?</h2>
+                    <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="faqAnswer" id="faq2Answer">
+                    <p class="answerText">
+                        To add a task, simply go to the "Add Task" section, enter the task description, set a deadline if required, and click "Add". Your task will appear in your task list.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="faqItem" id="faq3">
+                <div class="faqQuestion" onclick="toggleAnswer('faq3Answer')">
+                    <h2 class="questionText">Can I edit my tasks?</h2>
+                    <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="faqAnswer" id="faq3Answer">
+                    <p class="answerText">
+                        Yes, you can easily edit your tasks by clicking on the task you want to update. You can change the task description, deadline, or status.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="faqItem" id="faq4">
+                <div class="faqQuestion" onclick="toggleAnswer('faq4Answer')">
+                    <h2 class="questionText">Is there a way to mark tasks as completed?</h2>
+                    <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="faqAnswer" id="faq4Answer">
+                    <p class="answerText">
+                        Absolutely! Once you finish a task, simply click on the checkmark or "Complete" button next to the task to mark it as completed.
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

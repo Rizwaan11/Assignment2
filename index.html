@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <menu>
+            <button id="menuToggle" class="menu-toggle">☰</button>
+            <ul id="menuList" class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="faq.html">FAQS</a></li>
+            </ul>
+        </menu>
+        
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+<section id="heroSection">
+    <div class="hero-content">
+        <h1>Welcome to Your Ultimate Task & Note Organizer</h1>
+        <p>Stay organized, productive, and stress-free with our easy-to-use To-Do List and Notes app. Manage tasks, take notes, and reach your goals!</p>
+        <button id="getStartedBtn">Get Started</button>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="featuresSection">
+    <h2>Features</h2>
+    <div class="features-container">
+        <div class="feature-box">
+            <h3>Task Management</h3>
+            <p>Organize your tasks, set priorities, and deadlines to stay on top of your responsibilities.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Notes Taking</h3>
+            <p>Take quick notes, edit them, and keep track of your ideas all in one place.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Easy to Use</h3>
+            <p>Our app is designed to be intuitive and simple, ensuring that you can stay productive without any hassle.</p>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- To-Do List Section -->
+        <section id="todoSection">
+            <h2>To-Do List</h2>
+            <div id="addTaskSection">
+                <h3>Add New Task</h3>
+                <input type="text" id="taskInput" placeholder="Enter your task">
+                <input type="date" id="taskDeadline">
+                <select id="taskPriority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <ul id="todoList">
+                <!-- Dynamic task list will go here -->
+            </ul>
+        </section>
+
+        <!-- Notes Section -->
+        <section id="notesSection">
+            <h2>Notes</h2>
+            <div id="addNoteSection">
+                <h3>Add New Note</h3>
+                <input type="text" id="noteInput" placeholder="Enter your note">
+                <button id="addNoteBtn">Add Note</button>
+            </div>
+            <ul id="notesList">
+                <!-- Dynamic note list will go here -->
+            </ul>
+        </section>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

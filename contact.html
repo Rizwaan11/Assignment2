@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <menu>
+            <button id="menuToggle" class="menu-toggle">☰</button>
+            <ul id="menuList" class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="faq.html">FAQS</a></li>
+            </ul>
+        </menu>
+        
+    </header>
+
+
+    <section id="contactSection">
+        <div class="container">
+            <h1 id="contactTitle">Contact Us</h1>
+            <p id="contactIntro">We’d love to hear from you! Please fill out the form below, and we’ll get back to you as soon as possible.</p>
+            
+            <form id="contactForm" action="submit_form.php" method="POST" onsubmit="return validateForm()">
+                <div class="formGroup">
+                    <label for="name" id="nameLabel">Your Name:</label>
+                    <input type="text" id="name" name="name" class="formInput" placeholder="Enter your name" required>
+                    <span id="nameError" class="errorMessage"></span>
+                </div>
+                
+                <div class="formGroup">
+                    <label for="email" id="emailLabel">Your Email:</label>
+                    <input type="email" id="email" name="email" class="formInput" placeholder="Enter your email" required>
+                    <span id="emailError" class="errorMessage"></span>
+                </div>
+                
+                <div class="formGroup">
+                    <label for="message" id="messageLabel">Your Message:</label>
+                    <textarea id="message" name="message" class="formInput" rows="6" placeholder="Enter your message" required></textarea>
+                    <span id="messageError" class="errorMessage"></span>
+                </div>
+                
+                <div class="formGroup">
+                    <button type="submit" id="submitBtn" class="formButton">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
